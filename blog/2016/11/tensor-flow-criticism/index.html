@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>TensorFlow Dive</title>
+    
+    <!-- Loading animation -->
+    <script src="js/pace.min.js"></script>
+
+    <!-- Bootstrap core CSS and Material Bootstrap -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/css/bootstrap-material-design.css" rel="stylesheet">
+    <link href="/static/css/ripples.min.css" rel="stylesheet">
+    <link href="/static/css/material-scrolltop.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/material-blog.css" rel="stylesheet">
+
+    
+
+    
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  
+    <div class="navbar navbar-material-blog navbar-primary navbar-absolute-top">
+
+      <div class="navbar-image" style="background-image: url('/static/img/technology/unsplash-6.jpg');background-position: center 40%;"></div>
+
+      <div class="navbar-wrapper container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../../../../blog/"><i class="material-icons">&#xE871;</i> bskinner sf</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+            <li><a href="../../../../blog/">Blog</a></li>
+            
+            
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+          
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container blog-content">
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+        
+
+        
+      <div class="row">
+
+        <div class="col-sm-12 blog-main">
+
+          <section class="blog-post">
+            <div class="panel panel-default">
+              
+              <img src="../../../../blog/2016/11/tensor-flow-criticism/google-tensorflow-android.jpg" style='width: 100%' class="img-responsive" />
+              
+              <div class="panel-body">
+                <div class="blog-post-meta">
+                  
+                  
+                  <p class="blog-post-date pull-right">2016-11-02</p>
+                </div>
+                <div class="blog-post-content">
+                  <h2 class="blog-post-title">TensorFlow Dive</h2>
+                  
+                  <p>I still refuse to call it AI, just yet.  Until the Singularity occurs, it's not AI.  But I wanted to kick off my ML L2 census by reading up on Google's machine learning offering, TensorFlow.  I remember reading an article a while back how the industry was worried that google open sourcing this product could dominate this market or at least get all the cool kids only working on the TensorFlow engine (which has it's own downstream market implications, obv.).</p>
+<p>First article I read on this was here, written by an academic.</p>
+<p><a href="http://www.kdnuggets.com/2015/11/google-tensorflow-deep-learning-disappoints.html">http://www.kdnuggets.com/2015/11/google-tensorflow-deep-learning-disappoints.html</a></p>
+<p>The author negs the fact that the open source version only supports one node.   Well, on a single node your program will still run, it'll just take longer, right?   If you want it faster, you gotta pay, son.</p>
+<p>Really liked Cristian Garcia's comment at the bottom which refutes a number of the author's criticisms.</p>
+<h4>Takeaway</h4>
+<p>My take, TensorFlow is a mainly a computation pipeline (plus a neural network framework?), a platform for running your program but not necessarily the programs themselves.   Google offers some tutorial programs or, perhaps more specifically, the models that support a few of the common machine learning use cases, but the application is still up to you.   Love the fact that it's it python.   Or rather, I love the fact that I put in the effort to get to L5 in python because tensorflow learning curve is greatly reduced.   Better is question that the author rightly raises, namely: what do you want to do with it.  What problem are you trying to solve?  TensorFlow, the product, is a platform, doesn't answer any questions it and of itself.   You have to build your own app atop it.</p>
+<h4>Next things to lookup:</h4>
+<ul>
+<li>Parsey McParser, one of the free google models that can be used in tensorflow that jump start you down one of the current paths.   </li>
+<li>Any other KDNuggets(.com) to be gleaned?   All the advertising turned me off, frankly.  </li>
+<li>Time to brush up on numpy</li>
+<li>Feed forward neural networks</li>
+<li>The other ML players: <ul>
+<li><a href="http://deeplearning.net/software/theano/">http://deeplearning.net/software/theano/</a></li>
+<li><a href="http://caffe.berkeleyvision.org/">http://caffe.berkeleyvision.org/</a></li>
+<li><a href="http://deeplearning4j.org/">http://deeplearning4j.org/</a></li>
+<li><a href="http://torch.ch/">http://torch.ch/</a></li>
+<li><a href="https://github.com/pluskid/Mocha.jl">https://github.com/pluskid/Mocha.jl</a></li>
+</ul>
+</li>
+</ul>
+<p>Why follow machine learning offerings?   Is there a technique here that can be applied to help hook into the IntegrationFabric.  In their marketing material, EWeb talks about something called SmartAlex that addresses this issue, but I have not seen it in action.</p>
+
+
+                </div>
+              </div>
+            </div>
+          </section><!-- /.blog-post -->
+        </div>
+    </div>
+      
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          
+<div class="sidebar-module">
+	<div class="panel panel-default">
+	  <div class="panel-body">
+	    <h4>About</h4>
+	    <p><strong>bskinnersf</strong> is a blog for making sense of the hybrid cloud integration space. </p><p>It's not quite ready for prime time, so if you're reading this, bear with me until I can build up some more content.</p>
+	  </div>
+	</div>
+</div><!-- /.sidebar-module -->
+
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+
+      <div id="links">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-2">
+            <i class="material-icons brand">&#xE871;</i>
+            </div>
+
+            <div class="col-sm-8 text-center offset">
+              <ul class="list-inline">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="../../../../blog/">Blog</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-2 text-right offset">
+              <ul class="list-inline">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+  
+
+    <button class="material-scrolltop primary" type="button"></button>
+
+    <script src="/static/js/jquery-1.11.3.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/ripples.min.js"></script>
+    <script src="/static/js/material.min.js"></script>
+    <script src="/static/js/material-scrolltop.js"></script>
+    <script src="/static/js/main.js"></script>
+
+    <script>
+      $.material.init();
+      $('body').materialScrollTop();
+    </script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-87696737-1', 'auto');
+  ga('send', 'pageview');
+
+   </script>
+  </body>
+</html>
